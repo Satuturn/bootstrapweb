@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
     <title>bootstrap web</title>
 </head>
 
@@ -87,7 +89,7 @@
             <div class="col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-sm-12 col-md-2">
-                        <img src="https://fakeimg.pl/500x400/666666/" class="img-fluid">
+                        <img src="https://fakeimg.pl/500x600/666666/" class="img-fluid">
                     </div>
                     <div class="col-sm-12 col-md-10">
                         <h3>Lorem, ipsum.</h3>
@@ -99,7 +101,7 @@
             <div class="col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-sm-12 col-md-2">
-                        <img src="https://fakeimg.pl/500x400/666666/" class="img-fluid">
+                        <img src="https://fakeimg.pl/500x600/666666/" class="img-fluid">
                     </div>
                     <div class="col-sm-12 col-md-10">
                         <h3>Lorem, ipsum.</h3>
@@ -109,21 +111,30 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- 圖片格線 container-fluid -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
-            <div class="col-sm-12 col-md-4 col-lg-3"><img src="" class="img-fluid" alt=""></div>
+        <div class="owl-carousel">
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img1"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img2"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img3"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img4"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img5"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img6"></div>
+                <div><img src="https://fakeimg.pl/250x100/666666/?text=img7"></div>
         </div>
     </div>
+    <!--圖片格線 container-fluid 滿版 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+            <div class="col-sm-12 col-md-4 col-lg-3">title<img src="" class="img-fluid" alt=""></div>
+        </div>
+    </div>
+
 
 
     <!-- Optional JavaScript -->
@@ -137,6 +148,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:6, 
+                loop:true,
+                margin:10
+            });
+        });</script>
 </body>
 
 </html>
